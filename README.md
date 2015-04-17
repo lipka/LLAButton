@@ -11,10 +11,11 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
+UIKit.
+
 ## Installation
 
-LLAButton is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+LLAButton is available through [CocoaPods](http://cocoapods.org). To install it, simply add the following line to your Podfile:
 
 ```ruby
 pod "LLAButton"
@@ -22,7 +23,12 @@ pod "LLAButton"
 
 ## Author
 
-Lukas Lipka, lukaslipka@gmail.com
+Lukas Lipka
+
+- http://github.com/lipka
+- http://twitter.com/lipec
+- http://lukaslipka.com
+- lukaslipka@gmail.com
 
 ## License
 

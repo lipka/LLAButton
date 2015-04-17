@@ -10,29 +10,22 @@
 Pod::Spec.new do |s|
   s.name             = "LLAButton"
   s.version          = "0.1.0"
-  s.summary          = "A short description of LLAButton."
+  s.summary          = "A delightful subclass of UIButton."
   s.description      = <<-DESC
-                       An optional longer description of LLAButton
-
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
+                       A UIButton subclass that supports setting colors for control states.
                        DESC
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/LLAButton"
+  s.homepage         = "https://github.com/lipka/LLAButton"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Lukas Lipka" => "lukaslipka@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/LLAButton.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => "https://github.com/lipka/LLAButton.git", :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/lipka'
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
-  s.resource_bundles = {
-    'LLAButton' => ['Pod/Assets/*.png']
-  }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.public_header_files = 'Pod/Classes/**/*.h'
+  s.frameworks = 'UIKit'
 end
