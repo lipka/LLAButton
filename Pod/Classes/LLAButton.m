@@ -19,13 +19,24 @@
 
 - (id)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
-        [self addTarget:self action:@selector(didTouchUp:) forControlEvents:UIControlEventTouchUpInside];
-        [self addTarget:self action:@selector(didTouchUp:) forControlEvents:UIControlEventTouchUpOutside];
-        [self addTarget:self action:@selector(didTouchUp:) forControlEvents:UIControlEventTouchDragExit];
-        [self addTarget:self action:@selector(didTouchDown:) forControlEvents:UIControlEventTouchDragEnter];
-        [self addTarget:self action:@selector(didTouchDown:) forControlEvents:UIControlEventTouchDown];
+        [self initialize];
     }
     return self;
+}
+
+- (id)initWithCoder:(NSCoder *)aDecoder {
+    if (self = [super initWithCoder:aDecoder]) {
+        [self initialize];
+    }
+    return self;
+}
+
+- (void)initialize {
+    [self addTarget:self action:@selector(didTouchUp:) forControlEvents:UIControlEventTouchUpInside];
+    [self addTarget:self action:@selector(didTouchUp:) forControlEvents:UIControlEventTouchUpOutside];
+    [self addTarget:self action:@selector(didTouchUp:) forControlEvents:UIControlEventTouchDragExit];
+    [self addTarget:self action:@selector(didTouchDown:) forControlEvents:UIControlEventTouchDragEnter];
+    [self addTarget:self action:@selector(didTouchDown:) forControlEvents:UIControlEventTouchDown];
 }
 
 - (void)setBackgroundColor:(UIColor *)backgroundColor forState:(UIControlState)state {
