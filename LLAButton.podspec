@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   s.license          = 'MIT'
   s.author           = { "Lukas Lipka" => "lukaslipka@gmail.com" }
   s.source           = { :git => "https://github.com/lipka/LLAButton.git", :tag => s.version.to_s }
-  s.social_media_url = 'https://twitter.com/lipka'
+  s.social_media_url = 'https://twitter.com/lipec'
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
