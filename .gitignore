@@ -30,3 +30,8 @@ DerivedData
 # `pod install` in .travis.yml
 #
 # Pods/
+
+# Project
+Example/*.xcworkspace
+Example/Podfile.lock
+Example/Pods

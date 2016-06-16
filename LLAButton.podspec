@@ -9,10 +9,10 @@
 
 Pod::Spec.new do |s|
   s.name             = "LLAButton"
-  s.version          = "0.1.0"
+  s.version          = "0.2.0"
   s.summary          = "A delightful subclass of UIButton."
   s.description      = <<-DESC
-                       A UIButton subclass that supports setting colors for control states.
+                       A UIButton subclass that supports setting colors for different states.
                        DESC
   s.homepage         = "https://github.com/lipka/LLAButton"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
